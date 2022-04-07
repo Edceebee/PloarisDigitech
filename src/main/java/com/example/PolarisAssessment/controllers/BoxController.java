@@ -86,7 +86,7 @@ public class BoxController {
      * Endpoint to get all boxes available for loading in the database.
      * @return a list of boxes
      */
-    @GetMapping("/boxes/{state}")
+    @GetMapping("/boxes")
     public ResponseEntity<?> getAllBoxes() {
         try {
             List<Box> allBoxes = boxService.checkAvailableBoxForLoading();
